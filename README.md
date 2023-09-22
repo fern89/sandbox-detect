@@ -10,5 +10,11 @@ Results, where THRESHOLD=4.8, and 100%=physical machine, 0%=sandbox:
 -   any.run Windows 7: 0-2%
 -   Triage Windows 10 1703: 7-21%
 -   Triage Windows 10 2004: 0-5%
+-   VirusTotal CAPE Sandbox: 0%
+-   VirusTotal Microsoft Sysinternals: 1%
+-   VirusTotal Jujubox: 0%
+-   VirusTotal Zenbox: 91%
 -   Native Windows 10 on Pentium Gold 4425Y: 64-100%
 -   Native Windows 10 on AMD Ryzen 9 PRO 7940HS: 100%
+
+Note the false negative on VirusTotal Zenbox, this code is not 100% foolproof. THRESHOLD should be adjusted based on circumstance, THRESHOLD=3.5 is sufficient to block out Zenbox false negative, but may trigger false positive on the Pentium and other older CPUs under heavy load.
