@@ -11,6 +11,7 @@ Results, where THRESHOLD=4.8, and 100%=physical machine, 0%=sandbox:
 -   Triage Windows 10 2004: 17%
 -   VirusTotal Zenbox: 38%
 -   Native Windows 10 on Pentium Gold 4425Y: 83%
+-   Native Windows 10 on Intel i5-5200U: 100%
 
 For sandbox.c:
 
