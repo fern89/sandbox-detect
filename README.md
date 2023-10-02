@@ -1,7 +1,25 @@
 # Sandbox detector
-Code for [this](https://lemond69.github.io/2023/09/11/post.html) and [this](https://lemond69.github.io/2023/09/24/post.html) blog post
+Code for [this (part 1)](https://lemond69.github.io/2023/09/11/post.html), [this (part 2)](https://lemond69.github.io/2023/09/24/post.html), and [this (part 3)](https://lemond69.github.io/2023/10/02/post.html) blog post
 
-Compiled with `i686-w64-mingw32-gcc sandbox.c -s -O3 -masm=intel`
+For sandbox3.c:
+
+Can be compiled with `i686-w64-mingw32-gcc sandbox3.c -s -O3` OR `tcc sandbox3.c`
+
+Results:
+-   Wine on i7-1165G7 (all cores enabled): 0.26
+-   Wine on i7-1165G7 (all cores except 1 parked): 0.24
+-   Native Windows 10 on Pentium Gold 4425Y: 4.19
+-   Windows 7 on KVM (1 core): 9.07
+-   Windows 7 on KVM (8 cores): 9.89
+-   Triage Windows 7: 6.59
+-   any.run Windows 7: 48.79
+-   Triage Windows 10 1703: 6.09
+-   Triage Windows 10 2004: 7.23
+-   VirusTotal Microsoft Sysinternals: 30.91
+-   VirusTotal Jujubox: 157.27
+-   VirusTotal Zenbox: 6.13
+
+Below are all compiled with `i686-w64-mingw32-gcc sandbox.c -s -O3 -masm=intel`
 
 For sandbox2.c:
 
