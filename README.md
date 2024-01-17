@@ -1,10 +1,8 @@
 # Sandbox detector
 
-Code for [this](https://lemond69.github.io/2023/10/02/post.html) blog post
+Can be compiled with `i686-w64-mingw32-gcc sandbox.c -s -O3`
 
-Can be compiled with `i686-w64-mingw32-gcc sandbox.c -s -O3` OR `tcc sandbox.c`
-
-Results, lower is more likely physical machine:
+Raw ratios, lower is more likely physical machine:
 -   Wine on i7-1165G7 (all cores enabled): 0.26
 -   Wine on i7-1165G7 (all cores except 1 parked): 0.24
 -   Native Windows 10 on Pentium Gold 4425Y: 4.19
